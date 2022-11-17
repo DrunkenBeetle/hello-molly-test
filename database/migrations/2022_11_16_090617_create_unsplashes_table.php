@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('unsplashes', function (Blueprint $table) {
             $table->id();
-            $table->string('searchTerm');
+            $table->string('search_term');
             $table->timestamps();
         });
     }

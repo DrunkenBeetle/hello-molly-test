@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class UnsplashItem extends Model
 {
-    use HasFactory;
+    public $fillable = [
+        'unsplash_api_id',
+        'description',
+        'full_url',
+        'thumbnail_url'
+    ];
 }

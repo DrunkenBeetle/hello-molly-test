@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Unsplash extends Model
 {
-    use HasFactory;
+    public $fillable = [
+        'search_term'
+    ];
 
     public function items()
     {

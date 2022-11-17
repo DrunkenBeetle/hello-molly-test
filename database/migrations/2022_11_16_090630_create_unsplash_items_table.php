@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('unsplash_items', function (Blueprint $table) {
             $table->id();
             $table->foreignId('unsplash_id')->constrained()->onDelete(('cascade'));
+            $table->string('unsplash_api_id');
             $table->string('description');
             $table->string('full_url');
             $table->string('thumbnail_url');
